@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header><i class="bx bx-left-arrow-alt"></i>Weather App</header>
+
+      <!-- Middle area (input ,search, button)-->
+      <section class="input-part">
+        <p class="info-txt"></p>
+        <div class="searchArea">
+          <input
+            type="text"
+            placeholder="Enter city name"
+            spellcheck="false"
+            required
+          />
+          <!-- spellcheck metnin yazım ve dilbilgisi kurallarına göre denetlenip denetlenmeyeceğini belirler-->
+          <i class="bx bx-search-alt searchIcon"></i>
+        </div>
+        <div class="separator"></div>
+        <button>Get Device Location</button>
+      </section>
+<!-- Middle area End -->
+
+<!-- Weather active area start  -->
+      <section class="weather-part">
+        <img src="#" alt="Weather Icon" />
+        <div class="temp">
+          <span class="numb">_</span>
+          <span class="deg">°C</span>
+        </div>
+
+        <div class="weather">_</div>
+        <div class="location">
+          <i class="bx bx-map"></i>
+          <span>_,_</span>
+        </div>
+
+        <div class="bottom-details">
+          <div class="column feels">
+            <i class="bx bxs-thermometer"></i>
+            <div class="details">
+              <div class="temp">
+                <span class="numb-2">_</span>
+                <span class="deg">°C</span>
+              </div>
+              <p>Feels like</p>
+            </div>
+          </div>
+
+          <div class="column humidity">
+            <i class="bx bxs-droplet-half"></i>
+            <div class="details">
+              <span>_</span>
+              <p>Humidity</p>
+            </div>
+          </div>
+        </div>
+      </section>
+<!--Weather active area end  -->
+
+    </div> <!-- Wrapper div end -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
